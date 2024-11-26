@@ -1,0 +1,50 @@
+/* absolute css */
+
+/* h1{
+    font-size: 100px;
+    color: red;
+    background-color: green;
+    border: 10px dotted black;
+    border: 10px dashed black;
+    border: 10px solid black;
+} */
+
+/* ------------------------------------ */
+/* relative css */
+
+/*  % => depends on the parent  */
+
+/* section{
+    background-color: red;
+    width: 600px;
+}
+div{
+    width: 50%;
+    background-color: blueviolet;
+} */
+
+/* ------------------------------------ */
+
+/* em => 2em = 2 * the parent */
+
+/* ul>li{
+    font-size: 2em;
+} */
+
+/* ------------------------------------ */
+
+/* ul>li{
+    font-size: 2rem; 
+    root => html
+} */
+
+/* ------------------------------------ */
+
+
+section{
+    background-color: red;
+    height: 50vh;
+    width: 50vw;
+}
+
+

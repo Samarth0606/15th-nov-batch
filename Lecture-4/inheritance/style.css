@@ -1,0 +1,8 @@
+ul>li{
+    /* gets inherited */
+    color: red;
+    font-size: 50px;
+
+    /* donot get inherit */
+    border: 2px solid black;
+}
