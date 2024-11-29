@@ -1,0 +1,12 @@
+/* section  ol  p{} */
+/* adjacent subling */
+/* section ol > p + li{
+    color: red;
+} */
+
+
+
+/* general sibling */
+section ol > p ~ li{
+    color: blue;
+}

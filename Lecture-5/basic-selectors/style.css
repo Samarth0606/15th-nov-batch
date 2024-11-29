@@ -1,0 +1,74 @@
+
+
+/* element/tag selector */
+/* swarg ka darwaza = {} = block */
+/* h1{
+    color: red;
+}
+div{
+    background-color: green;
+} */
+
+/* h2 , h3 {
+    color: pink;
+    border: 2px solid black;
+}
+
+h3{
+    font-size: 100px;
+} */
+
+/* -------------------------------------------- */
+/* class selector */
+
+/* .sam , .vohra {
+    color: pink;
+    border: 2px solid black;
+}
+
+.vohra{
+    font-size: 100px;
+} */
+
+/* -------------------------------------------- */
+
+/* id selector */
+
+/* #vohra , .vohra, h3{
+    background-color: blue;
+    color: coral;
+    border: 5px dashed black;
+} */
+
+
+/* -------------------------------------------- */
+
+/* attribute selector */
+
+/* input[type="text"]{
+    background-color: yellow;
+}
+
+input[type="password"]{
+    background-color: green;
+}
+
+a[href="http://instagram.com"] , a[href="http://google.com"]{
+    font-size: 100px;
+    color: red;
+} */
+
+
+
+/* -------------------------------------------- */
+
+/* universal selector (everything) */
+/* html(root element) till all the elements */
+
+*{
+    border: 1px solid black;
+}
+
+
+
+

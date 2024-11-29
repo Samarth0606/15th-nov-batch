@@ -1,0 +1,76 @@
+/* hover */
+
+/* div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: lightblue;
+} */
+
+
+/* div:hover{
+    cursor: not-allowed;
+    cursor: pointer;
+    background-color: lightgreen;
+    border-radius: 50px;
+    border-radius: 50%;
+} */
+
+/* --------------------------------- */
+
+/* active */
+
+/* a{
+    color: green;
+    font-size: 100px;
+}
+a:active{
+    color: darkmagenta;
+    font-size: 200px;
+    border: 2px solid black;
+} */
+
+
+/* --------------------------------- */
+/* visited */
+
+/* a:visited{
+    color: green;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+} */
+
+/* --------------------------------- */
+/* focus */
+/* 
+input{
+    background-color: lightyellow;
+}
+input:focus{
+    background-color: hotpink;
+} */
+
+
+/* --------------------------------- */
+/* nth-of-type */
+
+/* li:nth-of-type(odd){
+    color: red;
+}
+
+li:nth-of-type(even){
+    color: blue;
+} */
+
+/* li:nth-of-type(7){
+    border: 2px solid black;
+    font-size: 100px;
+    color: red;
+} */
+
+/* n=0 => 3 , 6 , 9*/
+/* li:nth-of-type(3n+3){
+    border: 2px solid black;
+    font-size: 100px;
+    color: red;
+} */

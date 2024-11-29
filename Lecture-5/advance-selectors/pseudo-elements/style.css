@@ -1,0 +1,29 @@
+p{
+    font-family:monospace;
+}
+
+
+p::first-line{
+    font-family: cursive;
+    font-size: 50px;
+}
+
+p::first-letter{
+    font-size: 100px;
+    color: red;
+}
+
+
+li{
+    list-style: none;
+    border: 1px solid black;
+}
+
+li::before{
+    content: '\1F494'; 
+}
+
+li::after{
+    content: '\1F0CF'; 
+    content: ' I AM SAMARTH VOHRA THE WEB MENTOR FOR YOU'; 
+}
