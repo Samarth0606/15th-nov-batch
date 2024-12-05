@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* div{
+    border: 2px solid black;
+    background-color: lightgray;
+    height: 100px;
+    width: 100px;
+
+    child property
+    display: inline-block;
+
+} */
+
+
+
+/* section{ */
+    /* height: 100vh; */
+    /* parent property */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    
+/* } */
+
+div , b , span{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+/* parent property */
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /*main axis -> row*/
+    /* justify-content: space-between ; */
+    /* justify-content: space-evenly ; */
+    /* justify-content: space-around ; */
+    /* justify-content: center ; */
+
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* align-content: center ; */
+    /* align-content: flex-start ;
+    align-content: flex-end ; */
+
+    /* align-items: center; */
+    /* align-items: flex-end; */
+
+    /* gap: 20px; */
+    /* row-gap: 20px; */
+    /* column-gap: 20px; */
+
+}
+
+/* children property */
+#fourth{
+    background-color: red;
+    /* flex-grow: 1; */
+    flex-shrink: 10;
+    align-self: flex-end
+}
+#second{
+    background-color: green;
+    /* flex-grow: 10; */
+    flex-shrink: 5;
+    align-self: center;
+}
+
+
+
