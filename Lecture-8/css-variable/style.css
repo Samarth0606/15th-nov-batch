@@ -1,0 +1,16 @@
+:root{
+    --red-color:rgba(255 , 128 , 50 , 0.8);
+    --blue-color:rgba(0 , 228 , 250 , 0.8);
+    --font-bada: 175px
+}
+
+*{
+    padding: 0;
+}
+h1{
+    color: var(--red-color);
+    font-size: var(--font-bada);
+}
+h2{
+    background-color: var(--blue-color);
+}
