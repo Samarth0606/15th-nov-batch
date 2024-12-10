@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/2616bc9d69.js" crossorigin="anonymous"></script>
-
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
     <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/captain-americas-shield-2545623-2126620.png?f=webp&w=20">
     <title>Avergers Project</title>
 </head>
@@ -29,6 +31,35 @@
     <!--  home start -->
       <div id="home" class="home">
         <!-- library swiper (animations) -->
+
+        <!-- Slider main container -->
+        <div class="swiper home-slide">
+            
+            <div class="swiper-wrapper">
+               
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./img/home1.jpg" alt="image1">
+                    </div>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./img/home1.jpg" alt="image2">
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./img/home3.jpg" alt="image3">
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+        </div>
 
       </div>
     <!--  home end -->
@@ -115,6 +146,7 @@
         
         <!-- animation swiper -->
 
+
      </section>
     <!-- team ends -->
 
@@ -179,5 +211,45 @@
      
     <!-- footer end -->
 
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        let Navbar = document.querySelector('.navbar');
+        let Fabars = document.querySelector('.fa-bars');
+        Fabars.onclick = () => {
+            Navbar.classList.toggle("active")
+        };
+        var swiper = new Swiper(".home-slide", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+        });
+        var swiper = new Swiper(".team-slider", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                "0": {
+                    slidesPerView: 1,
+                    autoplay: {
+                        delay: 700,
+                        disableOnInteraction: false,
+                    },
+                },
+                "768": {
+                    slidesPerView: 2,
+
+                },
+                "1020": {
+                    slidesPerView: 3,
+
+                },
+            },
+        });
+
+    </script>
 </body>
 </html>
