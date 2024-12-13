@@ -167,10 +167,121 @@ header .fa-bars{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition-duration: 200ms;
 }
 
 .gallery .row .box:hover img{
-    transform: translateY(-100%);
+    transform: translateY(-30%);
+    filter: grayscale(90%);
+    opacity: 0.2;
+}
+
+.gallery .row .box:hover .content{
+    transform: translateY(0);
+}
+
+.gallery .row .box .content{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding: 3rem 2rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+}
+
+.gallery .row .box .content h3{
+    font-size: 3rem;
+    color: var(--sc-color);
+}
+.gallery .row .box .content p{
+    font: 2.5rem;
+    color: var(--mi-color);
+    padding: 1rem 0;
+    margin-bottom: 0;
+
+}
+
+/* ------------------------------- */
+
+.contact .row{
+    display: flex;
+    align-items: center;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row .form{
+    width: 80%;
+}
+
+.contact .row .form input,
+.contact .row .form textarea{
+    padding: 0.6rem 0.5rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: var(--mi-color);
+    text-transform: none;
+    border: 0.1rem solid var(--sc-color);
+    background: none;
 }
 
 
+
+.contact .row .form textarea{
+    width: 70%;
+    border: 0.1rem solid var(--sc-color);
+
+}
+
+.contact .row .form input[type="submit"]{
+    border: none;
+    background: var(--sc-color);
+}
+.contact .row .form input[type="submit"]:hover{
+    border: 0.1rem solid var(--sc-color);
+    background: none;
+}
+
+
+/* -------------------------- */
+
+.footer{
+    background: var(--th-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20% , 1fr));
+    gap: 2rem;
+    text-align: center;
+    padding: 3rem;
+
+}
+
+.footer h3{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    color: var(--mi-color);
+}
+.footer p{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    color: var(--mi-color);
+}
+
+.footer i{
+    font-size: 2.5rem;
+    margin: 1rem 0.5rem;
+    color: var(--mi-color);
+}
+
+.footer a{
+    display: block;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--mi-color);
+}
+.footer i:hover , .footer a:hover{
+    color: var(--sc-color);
+}
