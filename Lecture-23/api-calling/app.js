@@ -6,7 +6,7 @@
 
 // FETCH -> WEB API (BROWSER)-> GIVES YOU DATA BUT INCOMPLETE AT FIRST GO -> .json() to get the complete data
 // -> RETURNS A PROMISE(I CAN ONLY HANDLE PROMISE)
-// -> JSON returns a promise, with entirely complete data
+// -> .JSON returns a promise, with entirely complete data
 
 // fetch("https://api.tvmaze.com/search/shows?q=girls")
 // .then(function(resp){
@@ -45,7 +45,8 @@ async function callApi(){
 
 callApi()
 // ----------------------------------------------------------
-// AXIOS -> RETURNS A PROMISE, WHICH GIVES ENTIRE DATA AT ONCE
+// AXIOS -> 3rd party library -> cdn
+// RETURNS A PROMISE, WHICH GIVES ENTIRE DATA AT ONCE
 // 1. promise
 axios.get("https://api.tvmaze.com/search/shows?q=girls")
 .then(function(resp){
