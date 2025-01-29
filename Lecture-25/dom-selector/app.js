@@ -68,12 +68,36 @@
 
 // --------------------------------
 
-let h1 = document.getElementsByTagName('h1');
+// let h1 = document.getElementsByTagName('h1');
+// console.log(h1);
 
-for(let item of h1){
-    item.style.cssText = `
-        color : red ;
-        background-color : orange;
-        font-size : 100px;
-    `
-}
+// for(let item of h1){
+//     item.style.cssText = `
+//         color : red ;
+//         background-color : orange;
+//         font-size : 100px;
+//     `
+// }
+
+
+// -----------------------------------------------
+
+
+// let tagEl  = document.querySelector('h1')     //single
+// let tagEl2 = document.querySelector('.vohra') //single
+// let tagEl3 = document.querySelector('#sam')   //single
+
+// console.log(tagEl , tagEl2 , tagEl3)
+
+// -----------
+
+// let tagEl = document.querySelectorAll('h1')      //array
+// let tagEl2 = document.querySelectorAll('.vohra') //array
+// let tagEl3 = document.querySelectorAll('#sam')   //array
+
+// console.log(tagEl , tagEl2 , tagEl3);
+
+
+
+
+
