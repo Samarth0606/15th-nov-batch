@@ -14,17 +14,17 @@
 // --------------------------------------
 
 
-// addEvent Listerner
+// addEventListerner (best) 
 
-let btnEl = document.querySelector('.btn')
-function handleClick(){
-    console.log("i am ice-cream")
-}
-function handleClick2(){
-    console.log("i am jalebi")
-}
-btnEl.addEventListener('click' , handleClick)
-btnEl.addEventListener('click' , handleClick2)
+// let btnEl = document.querySelector('.btn')
+// function handleClick(){
+//     console.log("i am ice-cream")
+// }
+// function handleClick2(){
+//     console.log("i am jalebi")
+// }
+// btnEl.addEventListener('click' , handleClick)
+// btnEl.addEventListener('click' , handleClick2)
 
 
 
