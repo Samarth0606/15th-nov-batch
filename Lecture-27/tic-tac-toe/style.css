@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: cursive; */
+}
+
+:root{
+    --cell-size : 100px;
+    --mark-size : calc(var(--cell-size)*.9)
+}
+
+.board{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    justify-content: center;
+    align-content: center;
+    gap: 0;
+}
+
+.cell:first-child , 
+.cell:nth-of-type(2) , 
+.cell:nth-of-type(3){
+    border-top: none;
+}
+.cell:last-child , 
+.cell:nth-of-type(7) , 
+.cell:nth-of-type(8){
+    border-bottom: none;
+}
+
+.cell:nth-child(3n+3){
+    border-right: none;
+}
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid black;
+    position: relative;
+}
+
+/* ----------------------------------------- */
+
+.x::before,
+.x::after{
+    content: "";
+    height: var(--mark-size);
+    width: calc(var(--mark-size) * 0.15)  ;
+    background-color: black;
+    position: absolute;
+    top: 10%;
+    right: 45%;
+}
+
+.x::before{
+    transform: rotate(45deg);
+}
+.x::after{
+    transform: rotate(-45deg);
+}
+
+.x , .circle{
+    cursor: not-allowed;
+}
+
+/* ----------------------------------------- */
+/* circle */
+
+.circle::after,
+.circle::before{
+    content: "";
+    height: var(--mark-size);
+    width: var(--mark-size);
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    right: 4%;
+    top: 5%;
+}
+
+.circle::after{
+    height: calc(var(--mark-size) * .7);
+    width: calc(var(--mark-size) * .7);
+    right: 18%;
+    top: 18%;
+    background-color: white;
+}
+
+
+/* ----------------------------------------- */
+/* winner */
+
+
+.winner-message{
+    display: none;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 3rem;
+    color: white;
+}
+
+.winner-message button{
+    font-size: 3rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.winner-message.show{
+    display: flex;
+}
+
